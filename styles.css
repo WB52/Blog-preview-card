@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1.063rem;
+  font-weight: 800;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 24rem;
+  height: 32.625rem;
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  border: 1px solid black;
+  box-shadow: 7px 7px black;
+}
+
+h2:hover {
+  color: var(--yellow);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.top-image {
+  max-width: 21rem;
+  min-height: 12.5rem;
+}
+
+.top-image img {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+
+.category {
+  background-color: var(--yellow);
+  width: 5.125rem;
+  padding: 0.375rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 900;
+  margin-top: 1.438rem;
+  border-radius: 0.25rem;
+}
+
+.date {
+  margin-top: 0.875rem;
+  font-size: 0.875rem;
+}
+
+.description {
+  color: var(--grey);
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.563rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.author-avatar {
+  width: 2rem;
+  margin-right: 0.688rem;
+}
+
+.author-name {
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 407px) {
+  .card {
+    width: 20.438rem;
+    height: 31.313rem;
+  }
+  .top-image {
+    width: 17.438rem;
+    height: 12.5rem;
+  }
+  .top-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .date {
+    font-size: 0.75rem;
+    margin-top: 1.25rem;
+    letter-spacing: -0.1px;
+  }
+
+  .category {
+    width: 4.563rem;
+    height: 1.625rem;
+    font-size: 0.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 1.063rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    margin-top: 0.875rem;
+  }
+
+  .author {
+    margin-top: 1.563rem;
+  }
+
+  .date {
+    margin-top: 0.875rem;
+  }
+}
